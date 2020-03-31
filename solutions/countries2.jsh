@@ -127,8 +127,8 @@ countries.stream().
     c -> c.getTranslations().
     keySet().stream()
   ).
-  sorted().
   distinct().
+  sorted().
   forEach(System.out::println);
 
 
@@ -180,7 +180,7 @@ countries.stream().
       BigDecimal.TEN
     ) < 0
   ).
-  map(Country::getArea).
+  map(Country::getName).
   forEach(System.out::println);
 
 
